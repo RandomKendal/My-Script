@@ -1,4 +1,4 @@
-package RDMFighter;
+package rdmfighter;
 
 public enum EnemyNpc {
     GOBLIN("Goblin", 101),

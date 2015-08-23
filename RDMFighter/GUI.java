@@ -1,4 +1,4 @@
-package RDMFighter;
+package rdmfighter;
 
 import java.awt.Dimension;
 import java.awt.Font;

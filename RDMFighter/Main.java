@@ -1,4 +1,4 @@
-package RDMFighter;
+package rdmfighter;
 
 import java.awt.Color;
 import java.awt.Graphics;

@@ -1,4 +1,4 @@
-package RDMFighter;
+package rdmfighter;
 
 public enum Food {
     ROCKTAIL("Rocktail", 14617),

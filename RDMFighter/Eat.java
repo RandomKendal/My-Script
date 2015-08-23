@@ -1,4 +1,4 @@
-package RDMFighter;
+package rdmfighter;
 
 import org.parabot.environment.api.utils.Time;
 import org.parabot.environment.scripts.framework.Strategy;
