@@ -35,41 +35,6 @@ public class Main extends Script implements Paintable {
 	public Timer scriptTimer = new Timer();
 	public ScriptManifest Manifest = (ScriptManifest) Main.class.getAnnotation(ScriptManifest.class);
 	
-	public enum Food {
-	    ROCKTAIL("Rocktail", 14617),
-	    MANTA_RAY("Manta Ray", 392),
-	    SHARK("Shark", 386),
-	    LOBSTER("Lobster", 380);
-	    
-	    final String name;
-	    final int itemID;
-	    
-	    private Food(String name, int itemID) {
-	        this.name = name;
-	        this.itemID = itemID;
-	    }
-	}
-	
-	public enum EnemyNpc {
-	    GOBLIN("Goblin", 101),
-	    ROCK_CRAB("Rock Crab", new int[]{ 1265, 1267 }),
-	    MOUNTAIN_TROLL("Mountain Troll", new int[]{ 1106, 1110 }),
-	    BLUE_DRAGON("Blue Dragon", 55);
-	    
-	    final String name;
-	    final int[] npcId;
-	    
-	    private EnemyNpc(String name, int[] npcId) {
-	        this.name = name;
-	        this.npcId = npcId;
-	    }
-	    
-	    private EnemyNpc(String name, int npcId) {
-	        this.name = name;
-	        this.npcId = new int[]{ npcId };
-	    }
-	}
-	
 	public int food_index = 0;
 	public int npc_index = 3;
 	public int eatAtPercent = 50;

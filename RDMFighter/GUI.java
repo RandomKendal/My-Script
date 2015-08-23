@@ -18,9 +18,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import RDMFighter.Main.EnemyNpc;
-import RDMFighter.Main.Food;
-
 public class GUI extends JFrame implements ActionListener, ChangeListener {
 	/**
 	 * 
