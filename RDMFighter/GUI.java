@@ -78,7 +78,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener {
 		lblPercent.setBounds(124, 173, 46, 14);
 		contentPane.add(lblPercent);
 		
-		JLabel lblNewLabel = new JLabel("RDM Fighter v");
+		JLabel lblNewLabel = new JLabel("RDM Fighter v" + Core.Manifest.version());
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Verdana", Font.PLAIN, 17));
 		lblNewLabel.setBounds(51, -1, 178, 43);
@@ -111,7 +111,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener {
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JLabel lblItemsToLoot = new JLabel("Items to loot (split by a comma ):");
+		JLabel lblItemsToLoot = new JLabel("Items IDs to loot (split by a comma ):");
 		lblItemsToLoot.setHorizontalAlignment(SwingConstants.CENTER);
 		lblItemsToLoot.setBounds(51, 204, 178, 14);
 		contentPane.add(lblItemsToLoot);

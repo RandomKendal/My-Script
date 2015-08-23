@@ -32,10 +32,10 @@ import org.rev317.min.api.wrappers.Npc;
 public class Main extends Script implements Paintable {
 
 	private final ArrayList<Strategy> Strategies = new ArrayList<Strategy>();
-	private Timer scriptTimer = new Timer();
-	private ScriptManifest Manifest = (ScriptManifest) Main.class.getAnnotation(ScriptManifest.class);
+	public Timer scriptTimer = new Timer();
+	public ScriptManifest Manifest = (ScriptManifest) Main.class.getAnnotation(ScriptManifest.class);
 	
-	enum Food {
+	public enum Food {
 	    ROCKTAIL("Rocktail", 14617),
 	    MANTA_RAY("Manta Ray", 392),
 	    SHARK("Shark", 386),
@@ -50,7 +50,7 @@ public class Main extends Script implements Paintable {
 	    }
 	}
 	
-	enum EnemyNpc {
+	public enum EnemyNpc {
 	    GOBLIN("Goblin", 101),
 	    ROCK_CRAB("Rock Crab", new int[]{ 1265, 1267 }),
 	    MOUNTAIN_TROLL("Mountain Troll", new int[]{ 1106, 1110 }),
@@ -70,10 +70,10 @@ public class Main extends Script implements Paintable {
 	    }
 	}
 	
-	int food_index = 0;
-	int npc_index = 3;
-	int eatAtPercent = 50;
-	int[] LootableItems;
+	public int food_index = 0;
+	public int npc_index = 3;
+	public int eatAtPercent = 50;
+	public int[] LootableItems;
 	Food FOOD;
 	EnemyNpc ENEMY_NPC;
 	
@@ -103,7 +103,8 @@ public class Main extends Script implements Paintable {
 		Strategies.add(new Loot(this));
 		Strategies.add(new Attack(this));
 
-        System.out.println("Starting Script!");
+        System.out.println("");
+        System.out.println("=== Starting Script! ===");
         System.out.println("Attacking: " + ENEMY_NPC.name);
         System.out.println("Eating: " + FOOD.name + " at " + eatAtPercent + "% health");
         
@@ -116,6 +117,8 @@ public class Main extends Script implements Paintable {
 		} else {
 	        System.out.println("Not looting anything.");
 		}
+        System.out.println("========================");
+        System.out.println("");
         
         enemyInformation = ENEMY_NPC.name + " (#" + ENEMY_NPC.npcId[0] + ")";
 		foodInformation = FOOD.name + " at " + eatAtPercent + "%";
