@@ -1,4 +1,4 @@
-package rdmfighter;
+package rdmfighter.strategies;
 
 import org.parabot.environment.api.utils.Time;
 import org.parabot.environment.scripts.framework.Strategy;
@@ -6,6 +6,8 @@ import org.rev317.min.api.methods.Inventory;
 import org.rev317.min.api.methods.Menu;
 import org.rev317.min.api.methods.Skill;
 import org.rev317.min.api.wrappers.Item;
+
+import rdmfighter.Main;
 
 public class Eat implements Strategy {
 	/**
@@ -16,7 +18,7 @@ public class Eat implements Strategy {
 	/**
 	 * @param main
 	 */
-	Eat(Main main) {
+	public Eat(Main main) {
 		Core = main;
 	}
 

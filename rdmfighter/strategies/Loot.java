@@ -1,9 +1,11 @@
-package rdmfighter;
+package rdmfighter.strategies;
 
 import org.parabot.environment.api.utils.Time;
 import org.parabot.environment.scripts.framework.Strategy;
 import org.rev317.min.api.methods.GroundItems;
 import org.rev317.min.api.wrappers.GroundItem;
+
+import rdmfighter.Main;
 
 public class Loot implements Strategy {
 	/**
@@ -14,7 +16,7 @@ public class Loot implements Strategy {
 	/**
 	 * @param main
 	 */
-	Loot(Main main) {
+	public Loot(Main main) {
 		Core = main;
 	}
 

@@ -1,4 +1,4 @@
-package rdmfighter;
+package rdmfighter.data;
 
 public enum Food {
     ROCKTAIL("Rocktail", 14617),
@@ -6,8 +6,8 @@ public enum Food {
     SHARK("Shark", 386),
     LOBSTER("Lobster", 380);
     
-    final String name;
-    final int itemID;
+    public final String name;
+    public final int itemID;
     
     private Food(String name, int itemID) {
         this.name = name;

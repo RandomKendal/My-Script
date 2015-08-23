@@ -20,6 +20,12 @@ import org.rev317.min.api.methods.Players;
 import org.rev317.min.api.methods.Skill;
 import org.rev317.min.api.wrappers.Npc;
 
+import rdmfighter.data.EnemyNpc;
+import rdmfighter.data.Food;
+import rdmfighter.strategies.Attack;
+import rdmfighter.strategies.Eat;
+import rdmfighter.strategies.Loot;
+
 @ScriptManifest(
 		author = "Random (Kendal)", 
 		category = Category.COMBAT, 
@@ -39,8 +45,8 @@ public class Main extends Script implements Paintable {
 	public int npc_index = 3;
 	public int eatAtPercent = 50;
 	public int[] LootableItems;
-	Food FOOD;
-	EnemyNpc ENEMY_NPC;
+	public Food FOOD;
+	public EnemyNpc ENEMY_NPC;
 	
 	boolean startScript = false;
 

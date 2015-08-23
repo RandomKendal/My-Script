@@ -1,4 +1,4 @@
-package rdmfighter;
+package rdmfighter.data;
 
 public enum EnemyNpc {
     GOBLIN("Goblin", 101),
@@ -7,8 +7,8 @@ public enum EnemyNpc {
     TZHAAR_KET("TzHaar-Ket", 2610),
     BLUE_DRAGON("Blue Dragon", 55);
     
-    final String name;
-    final int[] npcId;
+    public final String name;
+    public final int[] npcId;
     
     private EnemyNpc(String name, int[] npcId) {
         this.name = name;

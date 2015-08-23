@@ -1,4 +1,4 @@
-package rdmfighter;
+package rdmfighter.strategies;
 
 import org.parabot.environment.api.utils.Time;
 import org.parabot.environment.scripts.framework.Strategy;
@@ -6,6 +6,8 @@ import org.rev317.min.api.methods.Inventory;
 import org.rev317.min.api.methods.Npcs;
 import org.rev317.min.api.wrappers.Item;
 import org.rev317.min.api.wrappers.Npc;
+
+import rdmfighter.Main;
 
 public class Attack implements Strategy {
 	/**
@@ -15,7 +17,7 @@ public class Attack implements Strategy {
 	/**
 	 * @param main
 	 */
-	Attack(Main main) {
+	public Attack(Main main) {
 		Core = main;
 	}
 
